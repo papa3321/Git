@@ -1,0 +1,56 @@
+bird.txt
+--------
+Birds (class Aves or clade Avialae) are feathered, winged, two-legged, warm-blooded, egg-laying vertebrates.
+
+
+git clone https://git-codecommit.us-west-2.amazonaws.com/v1/repos/richardtest
+
+git clone ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/richardtest
+
+git clone ssh://APKAIGTJZH4TM3F44RRQ@git-codecommit.us-east-2.amazonaws.com/v1/richardtest
+git clone ssh://APKAIGTJZH4TM3F44RRQ@git-codecommit.us-west-2.amazonaws.com/v1/repos/richardtest
+
+/-------------------------------------------------------------------------------------------------------------------------------------------
+Prerequisites
+Install Git (1.7.9 or later supported). If you don’t have Git installed, install it now.
+Attach the 
+IAMSelfManageServiceSpecificCredentials and 
+IAMReadOnlyAccess policies and 
+an appropriate AWS CodeCommit managed policy to the IAM user. Learn more
+
+Steps to clone your repository
+Generate Git credentials for your IAM user. Download the credentials and save them to a secure location on your computer.
+Clone your repository to your local computer and start working on code:
+  
+git clone https://git-codecommit.us-west-2.amazonaws.com/v1/repos/richardtest
+When prompted for a user name and password, provide the Git credentials you saved into the corresponding fields.
+I want more detailed instructions
+
+/-------------------------------------------------------------------------------------------------------------------------------------------
+Git
+papa-at-752768426100
+o4mW+3guIHzW2+XVmG085rSA8eL1sUhmXt/Y268ayS4=
+
+IAMSelfManageServiceSpecificCredentials-201703291433
+
+IAMReadOnlyAccess-201703291434
+IAMSelfManageServiceSpecificCredentials-201703291433
+
+/1060411/-----------------------------------------------------------------------------------------------------------------------------------
+Git位置
+C:\Program Files\Git\bin\git.exe
+MSBuild位置
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+
+=>設定完成但不能build
+
+/1060412/-----------------------------------------------------------------------------------------------------------------------------------
+在「建置觸發程序」 就會看見「遠端觸發建置 (例如: 透過 Script 腳本)
+EX:http://jenkins.miniasp.com:8080/job/test/build?token=fbheiVVWmJj8
+http://localhost:8080/job/JenkinsTest1060413/build?token=RichardAskeyTest
+
+=>因權限玩壞了
+
+/1060413/-----------------------------------------------------------------------------------------------------------------------------------
+JDK名稱		JDK 1.8.0_121
+JAVA_HOME	C:\Program Files\Java\jdk1.8.0_121

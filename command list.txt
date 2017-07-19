@@ -1,0 +1,194 @@
+---------------------------------------------
+---系統層級 (System-level configuration) (設定於整台電腦，所有使用者的預設值)
+---------------------------------------------
+$git config --system --list
+
+alias.c=commit
+alias.co=checkout
+alias.dt=difftool
+alias.mt=mergetool
+alias.praise=blame
+alias.ff=merge --ff-only
+alias.st=status
+alias.sync=!git pull && git push
+apply.whitespace=nowarn
+core.symlinks=false
+core.autocrlf=true
+core.editor=gitpad
+core.preloadindex=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+color.ui=true
+pack.packsizelimit=2g
+help.format=html
+http.sslcainfo=/ssl/certs/ca-bundle-ghfw.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=!github --credentials
+filter.ghcleansmudge.clean=cat
+filter.ghcleansmudge.smudge=cat
+push.default=upstream
+diff.tool=vs2013
+diff.algorithm=histogram
+difftool.prompt=false
+difftool.bc4.cmd="c:/program files (x86)/beyond compare 3/bcomp.exe" "$LOCAL" "$REMOTE"
+difftool.p4.cmd="c:/program files/Perforce/p4merge.exe" "$LOCAL" "$REMOTE"
+difftool.vs2012.cmd="c:/program files (x86)/microsoft visual studio 11.0/common7/ide/devenv.exe" '//diff' "$LOCAL" "$REMOTE"
+difftool.vs2013.cmd="c:/program files (x86)/microsoft visual studio 12.0/common7/ide/devenv.exe" '//diff' "$LOCAL" "$REMOTE"
+merge.tool=bc3
+mergetool.prompt=false
+mergetool.keepbackup=false
+mergetool.bc3.cmd="c:/program files (x86)/beyond compare 3/bcomp.exe" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+mergetool.bc3.trustexitcode=true
+mergetool.p4.cmd="c:/program files/Perforce/p4merge.exe" "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+mergetool.p4.trustexitcode=false
+
+---------------------------------------------
+---使用者層級 (User-level configuration) (設定於目前登入的使用者)
+---------------------------------------------
+$git config --global --list
+
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=papa3321
+user.email=richard.hsieh@askeycloud.com
+core.autocrlf=true
+core.excludesfile=C:\Users\richard1_hsieh\Documents\gitignore_global.txt
+
+---------------------------------------------
+---第一次用 Git 一定要設定user 區段下的 name 與 email 參數，
+---------------------------------------------
+$git config --global user.name "Richard"
+$git config --global user.email "richard.hsieh@askeycloud.com"
+
+---------------------------------------------
+---設定 commit 的檔案 有 CR 字元( 純 Windows 開發環境，可以設定為 false；跨平台協同開發，建議設定為 true )
+---------------------------------------------
+$git config --global core.autocrlf true
+
+---------------------------------------------
+---自動訂正打錯的參數，例如 git statsu 會自動修正為 git status 讓你不用重打一次
+---------------------------------------------
+$git config --global help.autocorrect 1
+
+---------------------------------------------
+---指令列工具版本
+---------------------------------------------
+$git --version
+git version 2.11.0.windows.3
+
+---------------------------------------------
+---建立本地儲存區 (local repository) ( 初始化 Git 目錄
+---------------------------------------------
+$git init
+Initialized empty Git repository in /.git/
+Success!
+
+---------------------------------------------
+---取得目前 Git 工作目錄的狀態
+---------------------------------------------
+$git status
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   octocat.txt
+#
+
+Success!
+
+---------------------------------------------
+---設定名字
+---------------------------------------------
+$ git config --global user.name "Your Name"
+
+---------------------------------------------
+---設定電子信箱
+---------------------------------------------
+$ git config --global user.email "youremail@example.com"
+
+---------------------------------------------
+---新增octocat.txt
+---------------------------------------------
+$ git add octocat.txt
+
+---------------------------------------------
+---提交
+---------------------------------------------
+$ git commit -m "Add cute octocat story"
+
+---------------------------------------------
+---告訴 Git 你的 GitHub 帳號
+---------------------------------------------
+$ git config --global user.username <USerNamE>
+
+---------------------------------------------
+---推送Push 到 遠端remote
+---------------------------------------------
+$ git push origin master
+
+---------------------------------------------
+---新增 遠端remote 連結
+---------------------------------------------
+$ git remote add <REMOTENAME> <URL>
+
+---------------------------------------------
+---幫一個 遠端remote 設定位址
+---------------------------------------------
+$ git remote set-url <REMOTENAME>
+
+---------------------------------------------
+---Pull 遠端remote 的程式
+---------------------------------------------
+$ git pull <REMOTENAME> <BRANCHNAME>
+
+---------------------------------------------
+---看你有哪些 遠端remote 連結
+---------------------------------------------
+$ git remote -v
+
+---------------------------------------------
+---Push 電腦上的程式到 遠端remote
+---------------------------------------------
+$ git push <REMOTENAME>
+
+
+
+---------------------------------------------
+---
+---------------------------------------------
+
+
+---------------------------------------------
+---
+---------------------------------------------
+
+
+---------------------------------------------
+---
+---------------------------------------------
+
+
+---------------------------------------------
+---
+---------------------------------------------
+
+
+
+
+
+
